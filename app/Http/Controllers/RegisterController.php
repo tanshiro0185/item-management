@@ -10,6 +10,11 @@ class RegisterController extends Controller
 {
     public function store(Request $request)
     {
+        $this->validate($request, [
+            'name' => 'required|max:100',
+            'type' => 'required|max:100',
+            'detail' => 'required|max:500',
+        ]);
         $item = new Item();
         $item->name = $request->name;
         $item->type = $request->type;

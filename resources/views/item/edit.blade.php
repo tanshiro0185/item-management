@@ -39,7 +39,7 @@
 
                         <div class="form-group">
                              <label for="detail">詳細</label>
-                             <textarea class="form-control" id="detail" name="detail" placeholder="詳細説明" maxlength="2000">{{ $item->detail }}</textarea>
+                             <textarea class="form-control" id="detail" name="detail" placeholder="詳細説明" maxlength="500">{{ $item->detail }}</textarea>
                              </div>
                     </div>
 
