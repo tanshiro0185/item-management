@@ -1,43 +1,29 @@
-## 商品管理システム
+#・商品管理システム
 
-### 環境構築手順
+##・概要
+このシステムでは、店舗で扱う商品の管理を行うことができます。
 
-* Gitクローン
-* .env.example をコピーして .env を作成
-* MySQLのデータベース作成（名前：item_management）
-* Macの場合 .env の DB_PASSWORD を root に修正（Windowsは修正不要）
+商品の新規登録から編集、削除を行うことができます。
 
-    ```INI
-    DB_PASSWORD=root
-    ```
+##・主な機能
 
-* APP_KEY生成
+・ログイン、ログアウト機能
 
-    ```console
-    php artisan key:generate
-    ```
+・商品一覧画面
 
-* Composerインストール
+・商品新規登録、編集、削除機能
 
-    ```console
-    composer install
-    ```
 
-* フロント環境構築
+PHP
 
-    ```console
-    npm ci
-    npm run build
-    ```
+MySQL
 
-* マイグレーション
+Laravel
 
-    ```console
-    php artisan migrate
-    ```
+設計書ページURL
 
-* 起動
+システム閲覧
 
-    ```console
-    php artisan serve
-    ```
+テストアカウント情報
+メールアドレス taro@techis.jp
+パスワード    taro1234
